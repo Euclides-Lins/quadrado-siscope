@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("list-siscope.db")
+connection = sqlite3.connect("../list-siscope.db")
 
 def createTable():
     cursor = connection.cursor();
