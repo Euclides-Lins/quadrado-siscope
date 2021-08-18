@@ -25,8 +25,8 @@ def deleteProduto(codigo):
     connection.commit()
 
 def updateProduto(produto):
-    connection.execute("update produto set nome = ?, descricao = ?, preco = ?, desconto = ?, quantidade = ? where codigo = ?", \
-     (produto.nome, produto.descricao, produto.preco, produto.desconto, produto.quantidade, produto.codigo ))
+    connection.execute("update produto set nome = ?, descricao = ?, preco = ?, desconto = ?, quantidade = ?", \
+    (produto.nome, produto.descricao, produto.preco, produto.desconto, preco.quantidade))
     connection.commit()
 
 def getProduto():
